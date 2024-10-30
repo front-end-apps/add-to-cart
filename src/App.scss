@@ -265,3 +265,9 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .skeleton-card {
+    min-width: calc((100% / 2) - 20px);
+  }
+}
