@@ -1,0 +1,126 @@
+.cart {
+  position: relative;
+  cursor: pointer;
+  .cart-image {
+    user-select: none;
+  }
+  .cart-item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgb(239, 79, 95);
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    transform: translate(35%, -40%);
+  }
+  .cart-name {
+    color: rgb(105, 105, 105);
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .cart-items {
+    visibility: hidden;
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
+    border: 1px solid rgb(232, 232, 232);
+    position: absolute;
+    right: -20px;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 16px;
+    min-width: 280px;
+    background-color: white;
+    cursor: default;
+    .cart-empty {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .cart-item-list {
+      max-height: 70vh;
+      padding-bottom: 62px;
+      overflow: scroll;
+      .checkout {
+        position: absolute;
+        bottom: 20px;
+        border: 0;
+        background-color: rgb(239, 79, 95);
+        color: white;
+        left: 20px;
+        right: 20px;
+        padding: 11px;
+        font-size: 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+      }
+    }
+    .cart-item-name {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 18px;
+      color: rgb(105, 105, 105);
+      &:not(:last-of-type) {
+        padding-bottom: 18px;
+        border-bottom: 1px rgb(232, 232, 232) solid;
+        margin-bottom: 18px;
+      }
+      .cart-item-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img {
+          border-radius: 50%;
+        }
+      }
+      small {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        &.number-of-items-in-cart {
+          padding: 2px 4px;
+          border-radius: 2px;
+          font-size: 12px;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+  &.is-active {
+    .cart-items {
+      visibility: visible;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .cart {
+    position: static;
+    .cart-item {
+      right: 15px;
+      top: 15px;
+    }
+    .cart-items {
+      left: 0;
+      right: 0;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      transition: transform .65s ease;
+      transform: translateY(100%);
+
+    }
+    &.is-active {
+      .cart-items {
+        transform: translateY(0);
+      }
+    }
+  }
+}

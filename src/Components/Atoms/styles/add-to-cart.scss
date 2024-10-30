@@ -1,0 +1,32 @@
+.add-to-cart{
+    background: white;
+    border: 1px solid #ef4372;
+    padding: 5px;
+    width: 100%;
+    border-radius: 3px;
+    min-height: 37px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ef4372;
+    cursor: pointer;
+    margin-top: 8px;
+    &.item-added{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        padding: 0;
+        overflow: hidden;
+        cursor: default;
+        small{
+            background-color: rgb(255, 236, 241);
+            padding: 9px 10px;
+            font-weight: 400;
+            font-size: 16px;
+            height: 35px;
+            box-sizing: border-box;
+            cursor: pointer;
+            min-width: 32px;
+        }
+    }
+}

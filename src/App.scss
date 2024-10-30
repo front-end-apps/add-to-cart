@@ -1,0 +1,267 @@
+.z-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.page-not-found {
+  text-align: center;
+  padding: 30vh 0;
+  font-size: 38px;
+  color: rgb(101, 101, 101);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  a {
+    border: 1px solid rgb(239, 79, 95);
+    color: rgb(255, 255, 255);
+    background-color: rgb(239, 79, 95);
+    box-shadow: rgba(54, 54, 54, 0.06) 0px 1px 2px;
+    border-radius: 4px;
+    padding: 7px 10px;
+    text-decoration: auto;
+    font-size: 20px;
+  }
+}
+.app-header {
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 998;
+  background-color: white;
+  .z-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brand-logo {
+    margin-right: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 38px;
+    font-family: system-ui;
+  }
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.app-footer {
+  padding: 22px 0;
+  background-color: rgb(248, 248, 248);
+  font-size: 13px;
+  border-top: 1px solid rgb(207, 207, 207);
+  color: rgb(79, 79, 79);
+  font-weight: 300;
+  margin-top: auto;
+}
+.gray-box {
+  background: rgb(248, 248, 248);
+}
+.heading {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 0px 0px 32px;
+}
+.responsize-img {
+  max-width: 100%;
+  height: auto;
+}
+.app-header-right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-left: 25px;
+  gap: 20px;
+}
+.app-header-left {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.section {
+  padding: 40px 0 45px;
+}
+.heading-2 {
+  font-size: 24px;
+  line-height: 1.2;
+  color: rgb(28, 28, 28);
+  padding: 14px 0px;
+  font-weight: 500;
+}
+.skeleton-cards {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 52px 32px;
+}
+
+.skeleton-card {
+  width: calc(16.6666666667% - 27px);
+  text-align: center;
+  min-width: 155px;
+}
+.skeleton-circle {
+  height: 156px;
+  width: 156px;
+  background: #d2d2d2;
+  border-radius: 100%;
+  margin: auto;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.skeleton-text {
+  color: transparent;
+  background: #d2d2d2;
+  height: 23px;
+  margin-top: 6px;
+  animation: pulse 2s ease-in-out infinite;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.skeleton-button {
+  background: white;
+  border: 1px solid #d2d2d2;
+  padding: 5px;
+  width: 100%;
+  border-radius: 3px;
+  min-height: 37px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .skeleton-button-text {
+    height: 15px;
+    width: 100%;
+    background: #d2d2d2;
+    max-width: 50%;
+    border-radius: 8px;
+    animation: pulse 2s ease-in-out infinite;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(210, 210, 210, 0.3);
+  }
+  50% {
+    background-color: rgba(210, 210, 210, 1);
+  }
+  100% {
+    background-color: rgba(210, 210, 210, 0.3);
+  }
+}
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20px;
+  align-items: center;
+}
+.app-header-mobile {
+  height: 65px;
+  background-color: #eeeded;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.banner {
+  padding: 58px 20px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background: rgb(245 188 52 / 18%);
+    z-index: 0;
+  }
+  .banner-text {
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    font-weight: 900;
+    font-size: 68px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .brand-image {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 24px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .app-header {
+    .brand-logo {
+      margin-right: 0;
+      color: #2c2c2c;
+    }
+  }
+  .menu-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #ffffff;
+    width: 100%;
+    max-width: 80%;
+    z-index: 997;
+    padding: 85px 20px 20px;
+    transform: translateX(-100%);
+    transition: transform 0.35s ease;
+    &.is-active {
+      transform: translateX(0);
+      border-right: 1px solid #ececec;
+    }
+  }
+  .heading {
+    font-size: 24px;
+  }
+  .page-not-found {
+    font-size: 26px;
+    padding-inline: 20px;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    padding: 15px 0 15px 20px;
+
+    .banner-text {
+      font-size: 28px;
+    }
+    .brand-image {
+      height: 93px;
+      width: 93px;
+      right: 0;
+      padding: 15px;
+  
+    }
+  }
+}

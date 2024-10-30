@@ -1,0 +1,24 @@
+.login-list{
+    display: flex;
+    gap: 20px;
+    li{
+        a
+        {
+            white-space: nowrap;
+            font-size: 18px;
+            font-weight: 300;
+            color: rgb(105, 105, 105);
+            padding: 8px;
+            cursor: pointer;
+            &:hover{
+                color: rgb(28, 28, 28);
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .login-list {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+}

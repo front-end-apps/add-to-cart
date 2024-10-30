@@ -1,0 +1,20 @@
+.list {
+    box-shadow: 1px 0px rgb(232, 232, 232);
+  li {
+    line-height: 1.5;
+    cursor: pointer;
+    padding: 8px 20px;
+    font-weight: 300;
+    color: rgb(28, 28, 28);
+    &.is-active {
+      color: rgb(239, 79, 95);
+      border-right: 3px solid rgb(239, 79, 95);
+      background: linear-gradient(
+        90deg,
+        rgb(255, 255, 255),
+        rgb(255, 237, 239)
+      );
+      font-weight: 500;
+    }
+  }
+}
