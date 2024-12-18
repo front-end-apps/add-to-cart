@@ -1,4 +1,4 @@
-Zoto Cart: https://zotola.web.app/
+Zotola Cart: https://zotola.web.app/
 
 **Web Layout**
 <img width="1440" alt="Screenshot 2024-12-18 at 5 01 59 PM" src="https://github.com/user-attachments/assets/ee5b7cb2-74c1-4532-81a5-a7fba6961688" />
