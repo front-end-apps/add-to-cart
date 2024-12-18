@@ -14,5 +14,6 @@ Zoto Cart: https://zotola.web.app/
 <img width="225" alt="Screenshot 2024-12-18 at 5 03 19 PM" src="https://github.com/user-attachments/assets/05b42806-3be5-464a-9347-3408c1ff380c" />
 <img width="225" alt="Screenshot 2024-12-18 at 5 04 17 PM" src="https://github.com/user-attachments/assets/7b7e34c6-c1ce-4d03-99df-cb7ff16d2568" />
 <img width="225" alt="Screenshot 2024-12-18 at 5 04 45 PM" src="https://github.com/user-attachments/assets/dbc875af-fbaa-4bc8-9287-84e53f60eb06" />
+<hr/>
 
 
